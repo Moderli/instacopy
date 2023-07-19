@@ -1,0 +1,583 @@
+/* Common Styles */
+body {
+    background: url(images/bg.jpg);
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Font Name', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.welcome-section {
+     display: flex;
+     justify-content: space-between;
+}
+
+
+.post-owner-img-container {
+  margin-left:2px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Add a smooth transition effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Example shadow effect */
+}
+
+.post-owner-img-container:hover {
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 0.8); /* Example shadow effect on hover */
+}
+.post-owner-username{
+  margin-top:10px;
+  margin-left: 10px;
+  font-weight:bolder;
+  font-family: -sans-serif;
+  
+}
+.post-owner{
+  display: flex;
+  margin-left:10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-right: 850px;
+}
+
+.post form{
+  display:flex;
+  justify-content:space-between;
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.post input{
+  padding: 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #40444b;
+  border: none;
+  margin-left: 30px;
+  color: #04ffff;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 0.5);
+}
+.comments {
+  height: 100px;
+  width: auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  overflow: auto;
+  display: block;
+  background-color: #030a0a;
+  border-radius: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.comment-avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment-content {
+  display: block;
+  font-weight: initial;
+  font-family: emoji
+}
+
+.comment-content .author {
+  font-weight: bold;
+}
+
+.comment-content .content {
+  margin-top: 5px;
+  padding-right: 850px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 0px;
+  border-radius: 10px;
+  background-color: #27231f;
+  box-shadow: cornsilk;
+}
+
+.comment-content .timestamp {
+  font-size: 12px;
+  color: #999;
+}
+
+
+
+
+/* Sidebar */
+.sidebar {
+  width: 10px;
+  height: 100vh;
+  background-color: #36393f;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+  overflow: hidden;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.sidebar:hover {
+  width: 240px;
+}
+
+.sidebar-header {
+  margin-left: 10px; 
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sidebar-header:hover {
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+
+.sidebar-nav li a:hover {
+  background-color: #7289da;
+  border-radius: 10px;
+}
+
+/* Posts */
+.posts {
+    margin-left: 30px;
+    padding: 30px;
+    margin-right: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(28 30 30);
+    border-radius: 30px;
+}
+
+.posts h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.post-owner-avatar{height: fit-content;width: fit-content;}
+
+.add-post-icon {
+  background-color: #7289da;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.post-making-section {
+  background-color: #36393f;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.post-form-group {
+  margin-bottom: 10px;
+}
+
+.post-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.post-form-group input[type="text"],
+.post-form-group textarea,
+.post-form-group select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: #40444b;
+  color: #ffffff;
+}
+
+.post-form-group input[type="file"] {
+  padding: 10px 5px;
+}
+
+.post-form-group input[type="submit"] {
+  background-color: #7289da;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.post {
+    background-color: #40444b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.post p {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.votes {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #333333d4;
+    border-radius: 10px;
+}
+
+.votes span {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.votes button {
+  background-color: #7289da;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Custom Styling for Instagram Post-like Cards */
+.instagram-card {
+  background-color: #36393f;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.instagram-card-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.instagram-card-username {
+  color: #ffffff;
+}
+
+.instagram-card-image {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.instagram-card-likes {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.instagram-card-description {
+  color: #ffffff;
+}
+
+/* Custom Styling for Discord-like Sidebar */
+.sidebar-nav ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover {
+  background-color: #7289da;
+}
+
+/* More Section */
+.more-section {
+  text-align: center;
+  margin-top: auto;
+}
+
+.more-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Welcome Username and Profile Image */
+h1 {
+  margin-bottom: 20px;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* Add more specific styles or modifications as needed */
+
+
+
+
+/* Adjustments for small screens */
+@media only screen and (max-width: 768px) {
+  /* Sidebar */
+  .sidebar {
+    padding:11px;
+    
+  }
+  .sidebar:hover {
+    padding:25px;
+    border-color: antiquewhite;
+  }
+  p {
+    display: block;
+    margin-left:20px;
+    }
+  sidebar-nav ul {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px;
+  }
+  
+  
+
+  /* User profile */
+  .user-profile {
+    }
+
+  /* More section */
+  .more-section {
+    /* More section styles for small screens */
+    padding:22px;
+    
+  }
+
+  /* Welcome section */
+  .welcome-section {
+    background-color:#344d4538;
+    border-radius:10px;
+    border-color:##8e9da9;
+    
+    /* Welcome section styles for small screens */
+  }
+  .welcome-section h1 {
+    display:flex;
+    jsutify-content:center;
+    font-size:30px;
+    margin-left:30px;
+    /* Welcome section styles for small screens */
+  }
+  .welcome-section form {
+    display: flex ;
+    margin: 2em;
+    font-weight: 2px; 
+    font-family:cursive;
+    font-size:15px;
+    justify-content: space-evenly;
+  }
+  .welcome-section label{
+    display: flex;
+    background-color: #1e1d1b;
+  }
+  .welcome-section input{
+    display: flex;
+    background-color: #77726b;
+    padding: 3px;
+    border-radius: 10px;
+    overflow:hidden;
+    margin-right: 10px; 
+    color:antiquewhite;
+    border-color:#4b6c6c;
+    box-shadow: white;
+    
+  }
+  
+ /* Common styles for all screen sizes */
+.posts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: scroll;
+  display: contents;
+}
+
+.post {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.post-owner-img-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.upvote,
+.downvote {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.upvote button,
+.downvote button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.comments {
+  margin-top: 15px;
+}
+
+.comment-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comment-content .author {
+  font-size: 14px;
+}
+
+.comment-content .content {
+  font-size: 14px;
+}
+
+.comment-content .timestamp {
+  font-size: 12px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .post h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .post-making-section{
+  }
+
+  .post p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .post-owner-img-container {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .votes {
+    margin-top: 10px;
+  }
+
+  .upvote,
+  .downvote {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .upvote button,
+  .downvote button {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .comment-avatar {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .comment-content .author,
+  .comment-content .content {
+    font-size: 12px;
+  }
+
+  .comment-content .timestamp {
+    font-size: 10px;
+  }
+}
