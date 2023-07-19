@@ -4,15 +4,17 @@ This is the code to make your own website just like Instagram , only some featur
 # How To use
 **1** )  Download the file.
 
-**2** ) Open the db_connect file and exchange them with the actual one.
+**2** ) create a directory images with directory's photos , videos, other, txt.
 
-**3** ) Please make sure you create tables in the SQL database.
+**3** ) Open the db_connect file and exchange them with the actual one.
 
-**4** ) Create tables users , posts, comments with columns (user_id, username, UID, fname, lname, email, password, ip, date, status, img, description) and (post_id, user_id, post_title, post_content, file_link, file_type, time_stamp, comments, upvotes, downvotes, tags) and (comment_id, comment_content, commenter_id, comment_time, post_id)
+**4** ) Please make sure you create tables in the SQL database.
+
+**5** ) Create tables users , posts, comments with columns (user_id, username, UID, fname, lname, email, password, ip, date, status, img, description) and (post_id, user_id, post_title, post_content, file_link, file_type, time_stamp, comments, upvotes, downvotes, tags) and (comment_id, comment_content, commenter_id, comment_time, post_id)
  
 # Follow
 
-linked in www.linkedin.com/in/bharath-varma-907633278
+on insta : i dont have a accout . "(..)"
 
 # Donate 
 
